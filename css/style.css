@@ -9,3 +9,47 @@
 .font-roboto{
     font-family: "Roboto", sans-serif;
 }
+
+@media screen and (max-width: 1275px) and (min-width: 1181px) {
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container.md\:px-2.px-4.mx-auto {
+        max-width: 76rem;
+    }
+}
+
+@media screen and (max-width: 1180px) and (min-width: 942px) {
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-left-part, .card-right-part{
+        grid-column: span 12 / span 12;
+
+    }
+
+    .history-title {
+        width: 100%;
+    }
+
+    .container.md\:px-2.px-4.mx-auto {
+        max-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 941px) and (min-width: 768px) {
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-left-part, .card-right-part{
+        grid-column: span 12 / span 12;
+
+    }
+
+    .history-title {
+        width: 100%;
+    }
+}
