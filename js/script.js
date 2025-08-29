@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         list.prepend(div);
 
-        console.log(`HISTORY: ${d.name}, ${d.number}, ${time}`);
+        console.log(`HISTORY: ${d.name}: ${d.number}, ${time}`);
     })
 
     document.getElementById('history-clear-btn')?.addEventListener('click', function(){
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var name   = (card.querySelector('h2')?.textContent || 'Service').trim();
     var number = (card.querySelector('h3')?.textContent || 'N/A').trim();
-    console.log('COPY: ->', name, number);
+    console.log('COPY: try ->', name, number);
 
     function incCopy(){
       var el = document.getElementById('copy-count');
